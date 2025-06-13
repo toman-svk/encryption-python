@@ -1,0 +1,20 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "encryption"
+version         = "0.1.0"
+description     = "Simple text encryption and decryption "
+authors         = [{ name = Matěj Klee, Lívia Plachetková, Filip Tomanka }]
+readme          = "README.md"
+license         = { text = "MIT" }
+requires-python = ">=3.13"
+classifiers     = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/toman-svk/encryption-python"

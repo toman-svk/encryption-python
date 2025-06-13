@@ -3,7 +3,7 @@ import pandas as pd
 import re
 from collections import defaultdict
 
-with open('krakatit.txt', 'r', encoding='utf-8') as file:
+with open('./data/krakatit.txt', 'r', encoding='utf-8') as file:
     text = file.read()
 text = text.lower()
 text = re.sub(r'[^a-záčďéěíňóřšťúůýž]', '', text)  # filtrovat pismena z ceskej abecedy
