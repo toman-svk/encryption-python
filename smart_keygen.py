@@ -1,3 +1,4 @@
+# Generate a key for a simple substitution cipher based on the frequency of letters in the ciphertext.
 import collections
 import string
 

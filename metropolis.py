@@ -4,6 +4,7 @@ from decrypt import decrypt
 import pandas as pd
 from smart_keygen import generate_initial_key
 import numpy as np
+
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_"
 
 # Load the reference bigram matrix

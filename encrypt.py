@@ -1,3 +1,4 @@
+# Function to encrypt a given text using a substitution cipher with a provided key.
 def encrypt(text, key):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_"
    

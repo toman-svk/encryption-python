@@ -1,3 +1,4 @@
+# Function to decrypt a given text using a provided key
 def decrypt(text, key):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_"
     

@@ -1,3 +1,4 @@
+# Generates absolute and relative bigram matrices from the text of "Krakatit" by Karel Čapek.
 import numpy as np
 import pandas as pd
 import re
