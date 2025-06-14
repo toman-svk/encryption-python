@@ -4,9 +4,9 @@ import re
 from collections import defaultdict
 
 with open('./data/krakatit.txt', 'r', encoding='utf-8') as file:
-    text = file.read()
-text = text.lower()
-text = re.sub(r'[^a-záčďéěíňóřšťúůýž]', '', text)  # filtrovat pismena z ceskej abecedy
+    text = file.read().replace(' ', '_').upper()
+
+text = re.sub(r'[^A-Z_]', '', text)  # filtrovat pismena z ceskej abecedy
 
 unique_chars = sorted(set(text))
 char_to_index = {char: idx for idx, char in enumerate(unique_chars)}
@@ -34,5 +34,3 @@ df_abs.to_csv('absolutni_bigramova_matice.csv', encoding='utf-8-sig')
 df_rel.to_csv('relativni_bigramova_matice.csv', encoding='utf-8-sig')
 
 print("Absolutní a relativní bigramové matice byly úspěšně vytvořeny a uloženy.")
-
-

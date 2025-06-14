@@ -4,7 +4,7 @@ import string
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_"
 
 # Approximate frequency order of Czech letters (incl. underscore as space)
-CZECH_FREQ_ORDER = "EAONISR_TVLUKMBDPČZJYHŘCŽÁÝÉÚĚŤŇĎ"
+CZECH_FREQ_ORDER = "EAONISR_TVLKMDPZUBHYCJGXWQF"
 
 def get_frequency_order(text):
     text = text.upper()
