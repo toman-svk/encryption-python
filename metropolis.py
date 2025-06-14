@@ -1,9 +1,9 @@
-import numpy as np
 import random
 from encrypt import encrypt
 from decrypt import decrypt
 import pandas as pd
 from smart_keygen import generate_initial_key
+import numpy as np
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_"
 
 # Load the reference bigram matrix
@@ -56,4 +56,4 @@ def metropolis_hastings(ciphertext, reference_matrix, iterations=10000, initial_
 
         score_history.append(best_score)
 
-    return best_key, score_history, initial_key
+    return best_key, score_history
